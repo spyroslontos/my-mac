@@ -1,0 +1,8 @@
+[user]
+	name = Spyros Lontos
+	email = <my_email>
+[core]
+	excludesfile = /Users/spyros/.gitignore_global
+[init]
+	defaultBranch = main
+

@@ -1,0 +1,12 @@
+include /opt/homebrew/share/nano/*.nanorc # enable syntax highlighting
+
+set linenumbers        # show line numbers
+set tabsize 4          # 4 spaces per tab
+set tabstospaces       # convert tabs to spaces
+set autoindent         # auto-indent new lines
+set constantshow       # show cursor position
+set mouse              # enable mouse support
+set historylog         # save search history
+set positionlog        # remember cursor position between sessions
+bind ^Z suspend main   # Ctrl+Z suspends nan
+
