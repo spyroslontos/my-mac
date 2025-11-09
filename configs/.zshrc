@@ -41,14 +41,12 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
 +vi-git-untracked() {
   [[ $(git rev-parse --is-inside-work-tree 2>/dev/null) == "true" ]] || return
-  if (( $(git status --porcelain 2>/dev/null | grep -c "^??") > 0 )); then
-    hook_com[staged]+="%F{red}"
-  fi
+  git ls-files --others --exclude-standard --directory | grep -q . && hook_com[staged]+="%F{red}"
 }
 
 # ---- Prompt ----
 # Yellow current directory, cyan git branch, > arrow
-PROMPT=$'\n%F{yellow}%~%f$vcs_info_msg_0_ %F{white}> %f'
+PROMPT=$'\n%F{yellow}%~%f$vcs_info_msg_0_ > '
 
 # ---- Plugins ----
 source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
