@@ -9,6 +9,7 @@ cat ~/.gitconfig > configs/.gitconfig
 cat ~/.gitignore_global > configs/.gitignore_global
 cat ~/.nanorc > configs/.nanorc
 cat ~/.psqlrc > configs/.psqlrc
+cat ~/.config/ghostty/config > configs/ghostty/config
 ```
 
 ## Install All Packages
