@@ -3,11 +3,13 @@
 ## Development
 
 - Cursor
+- Antigravity
 - Xcode
 - DBeaver
 - pgAdmin 4
 - Docker
 - Ghostty
+- Raycast
 
 ## Communication
 
